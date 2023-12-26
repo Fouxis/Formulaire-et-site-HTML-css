@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+}
+nav{
+    background-color: rgb(244, 9, 76);
+    width: 20vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+
+}
+header{
+    background-color: yellow;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+.division0{
+    width: 10vw;
+    height: 40vh;
+
+}
+body{
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    background-color: rgb(255, 231, 164);
+    width: 80vw;
+    height: 60vh;
+}
+.section2{
+    background-color: rgb(255, 231, 164);
+    width: 80vw;
+    height: 60vh;
+}
+.paragraphe1{
+    background-color: #006699;
+    width: 35vw;
+    height:45vh ;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    border: 1px solid;
+    overflow: auto;
+}
+.paragraphe2{
+    background-color: #44ddff;
+    width: 35vw;
+    height:45vh ;
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    border: 1px solid;
+    overflow: auto;
+}
+.nom1{
+    color: #006699;
+    font-family: 'Rubik', sans-serif;
+}
+.nom2{
+    font-family: 'Rubik', sans-serif;
+    color: #44ddff;
+}
+.img1{
+    width: 35vw;
+    height: 50vh;
+}
+.img2{
+    width: 35vw;
+    height: 50vh;
+}
+.img3{
+    width: 75vw;
+    height: 35vh;
+    display: flex;
+}
+.division3{
+    display: flex;
+    flex-direction: column;
+}
+.division4{
+    display: flex;
+    flex-direction: column;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+.division2{
+    display: flex;
+    flex-direction: column;
+}
+.division1{
+    display: flex;
+    flex-direction: row;
+}
+
+@media all and (max-width: 1147px)/*pour le mobile on va utiliser le max-device-width car cela permet de cibler la largeur de l ecran */
+{
+    .paragraphe1{
+        font-size: medium;
+    }
+    .paragraphe2{
+        font-size: medium;
+    }
+    
+}
+@media all and (max-width: 768px)
+{
+    .paragraphe1{
+        font-size: small;
+    }
+    .paragraphe2{
+        font-size: small;
+    }
+    img{
+        width: 50%;
+    }
+    a{
+        font-size: medium;
+    }
+}
+@media all and (max-width: 620px)
+{
+    .paragraphe1{
+        font-size: x-small;
+    }
+    .paragraphe2{
+        font-size: x-small;
+    }
+}
+@media all and (max-width: 480px)  /*telephone*/
+{
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .division3{
+        align-items: center;
+    }
+    .division4{
+        align-items: center;
+    }
+    nav{
+        height: auto;
+    }
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.burger-icon{
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 60px;
+    left:0;
+    width: 20vw;
+    background-color:rgb(244, 9, 76);
+}
+
+body.dark,
+body.dark section {
+    color: white;
+    background-color: black;
+}
+
+body.dark h2 {
+    color: white;
+}
+
+body.dark .paragraphe1,
+body.dark .paragraphe2 {
+    background-color: transparent;
+    
+}
+
+body.dark header {
+    background-color: rgb(62, 62, 62);
+}

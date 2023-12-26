@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="div3">
+    <header>
+        <h1><img src="Image/R (3).png" alt=""></h1>
+    </header>
+    <div class="div2">
+        <div class="burger-icon" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    
+            <ul class="menu" id="menu">
+                <li><a href="sitepage1.html">Page 1</a></li>
+                <li><a href="sitepage2.html">Page 2</a></li>
+                <li><a href="sitepage3.html">Page 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div4">
+        <div class="premier-carourel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Image/3200Kanon-Matsubara-Cool-vhfv8m.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="Image/4223Misaki-Okusawa-Power-a8NC1p.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="Image/4260Kokoro-Tsurumaki-Cool-Midsummer-s-Treasure-fqU4xf.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="Image/4347Hagumi-Kitazawa-Happy-Acrobatics-Star-h7kgEk.png" alt="" srcset=""></div>
+                <div class="swiper-slide"><img src="Image/4748Kaoru-Seta-Happy-A-Fleeting-Curtain-Call-Expy7D.png" alt="" srcset=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <main>
+            <form action="">
+                <div class="div1">
+                    <label for="pseudo">prenom</label>   
+                    <input type="text" id="pseudo" required>
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" required>
+                    <label for="mdp">Mdp</label>
+                    <input type="password" id="mdp" required>
+                    <div id="mdpError"></div>
+                    <input type="color">
+                </div>
+            <fieldset>
+                <legend>Select option</legend>
+
+                <select name="" id="choisir">
+                    <option value="France">France</option>
+                    <option value="Islande">Islande</option>
+                    <option value="Canarie">Canarie</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Bouton radio</legend>
+                <label for="f">Femme</label>
+                <input type="radio" name="" id="f">
+                <label for="h">Homme</label>
+                <input type="radio" name="" id="h">
+            </fieldset>
+            <fieldset>
+                <legend>Bouton checkbox</legend>
+                <label for="po">Pomme</label>
+                <input type="checkbox" name="" id="po">
+                <label for="poi">Poire</label>
+                <input type="checkbox" name="" id="poi">
+                <label for="f">Fraise</label>
+                <input type="checkbox" name="" id="fr">
+            </fieldset>
+            <input type="reset">
+            <input type="submit" id="envoyer">
+        </form>
+    </main>
+</div>
+    <button class="Darkmode">Darkmode</button>  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/formulaire.js"></script>
+</body>
+</html>
